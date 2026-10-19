@@ -1,0 +1,78 @@
+{
+  "id": "slug-do-perfil",
+  "marca": "Nome da empresa",
+  "blog_url": "https://blog.exemplo.com.br",
+  "dominios_internos": [
+    "exemplo.com.br",
+    "blog.exemplo.com.br"
+  ],
+  "idioma": "pt-BR",
+  "mercado": "br",
+  "icp": "Quem lê, cargo, porte de empresa e a dor principal",
+  "oferta": "O que a empresa vende, em 1 frase",
+  "voz": {
+    "persona": "Nome e papel da persona editorial (opcional)",
+    "pessoa": "você | nós | impessoal",
+    "registro": "consultivo, direto, sem jargão vazio",
+    "exemplos_de_tom": [
+      "frase que soa como a marca",
+      "outra"
+    ]
+  },
+  "estilo": {
+    "proibir_travessao": true,
+    "termos_proibidos": [
+      "no cenário atual",
+      "no mundo cada vez mais",
+      "desvendar",
+      "mergulhar fundo",
+      "é importante ressaltar"
+    ],
+    "termos_preferidos": {
+      "lead": "lead",
+      "e-mail": "e-mail"
+    },
+    "links_internos_min": 3
+  },
+  "autor": {
+    "nome": "Nome Sobrenome",
+    "papel": "Cargo e credencial real",
+    "url": null
+  },
+  "cta": {
+    "texto": "Convite do fim do post",
+    "url": null,
+    "palavras_chave": [
+      "diagnóstico"
+    ]
+  },
+  "concorrentes": [
+    "concorrente1.com.br"
+  ],
+  "nao_citar": [
+    "concorrentes diretos como fonte"
+  ],
+  "temas_proibidos": [],
+  "publicacao": {
+    "plataforma": "wordpress | hubspot | outro",
+    "skill_ou_conector": "nome",
+    "plugin_seo": "Yoast | Rank Math | nenhum",
+    "exigencias": []
+  },
+  "notas": "",
+  "personas": [
+    {
+      "id": "persona-1",
+      "nome": "Nome fictício",
+      "cargo": "Cargo",
+      "contexto": "Porte, setor, maturidade",
+      "dor": "Problema que a leva a buscar",
+      "objetivo": "O que quer resolver",
+      "pergunta_tipica": "Como ela digitaria a busca",
+      "objecoes": [
+        "..."
+      ],
+      "etapa_funil": "topo | meio | fundo"
+    }
+  ]
+}

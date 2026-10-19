@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+dist/
+.DS_Store
+# perfis de clientes ficam fora do repositório público
+profiles/*.json
+!profiles/_template.json

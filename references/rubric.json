@@ -1,0 +1,281 @@
+{
+  "version": "1.1.0",
+  "scale": {
+    "pass": 1.0,
+    "warn": 0.5,
+    "fail": 0.0
+  },
+  "evidence_levels": {
+    "S": 3,
+    "C": 2,
+    "A": 1
+  },
+  "dimension_weights": {
+    "seo": 0.35,
+    "geo": 0.35,
+    "aeo": 0.3
+  },
+  "checks": [
+    {
+      "id": "seo.single_h1",
+      "dim": "seo",
+      "ev": "S",
+      "type": "auto",
+      "critical": true,
+      "label": "Um único H1"
+    },
+    {
+      "id": "seo.title_length",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "critical": true,
+      "label": "seo_title com 50 a 60 caracteres"
+    },
+    {
+      "id": "seo.title_keyword",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Palavra-chave no seo_title"
+    },
+    {
+      "id": "seo.meta_description",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "critical": true,
+      "label": "Meta description com 140 a 160 caracteres"
+    },
+    {
+      "id": "seo.h1_keyword",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Palavra-chave no H1"
+    },
+    {
+      "id": "seo.slug",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Slug curto e limpo"
+    },
+    {
+      "id": "seo.keyword_early",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Palavra-chave nas primeiras 100 palavras"
+    },
+    {
+      "id": "seo.keyword_stuffing",
+      "dim": "seo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Sem excesso de palavra-chave"
+    },
+    {
+      "id": "seo.secondary_coverage",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Cobertura das secundárias"
+    },
+    {
+      "id": "seo.heading_structure",
+      "dim": "seo",
+      "ev": "S",
+      "type": "auto",
+      "label": "Estrutura de headings"
+    },
+    {
+      "id": "seo.internal_links",
+      "dim": "seo",
+      "ev": "S",
+      "type": "auto",
+      "label": "Links internos"
+    },
+    {
+      "id": "seo.external_links",
+      "dim": "seo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Links para fontes externas"
+    },
+    {
+      "id": "seo.image_alt",
+      "dim": "seo",
+      "ev": "S",
+      "type": "auto",
+      "label": "Alt das imagens"
+    },
+    {
+      "id": "seo.length_vs_top3",
+      "dim": "seo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Tamanho frente ao top 3"
+    },
+    {
+      "id": "seo.readability",
+      "dim": "seo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Legibilidade"
+    },
+    {
+      "id": "seo.search_intent",
+      "dim": "seo",
+      "ev": "S",
+      "type": "review",
+      "critical": true,
+      "label": "Atende a intenção de busca"
+    },
+    {
+      "id": "geo.answer_first",
+      "dim": "geo",
+      "ev": "C",
+      "type": "auto",
+      "critical": true,
+      "label": "Bloco-resposta logo após o H1"
+    },
+    {
+      "id": "geo.passages",
+      "dim": "geo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Seções autocontidas"
+    },
+    {
+      "id": "geo.no_vague_openers",
+      "dim": "geo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Seções sem pronome solto no início"
+    },
+    {
+      "id": "geo.evidence_density",
+      "dim": "geo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Densidade de dados"
+    },
+    {
+      "id": "geo.sources_section",
+      "dim": "geo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Fontes linkadas"
+    },
+    {
+      "id": "geo.expert_signal",
+      "dim": "geo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Citação ou experiência atribuída"
+    },
+    {
+      "id": "geo.author_eeat",
+      "dim": "geo",
+      "ev": "S",
+      "type": "auto",
+      "label": "Autor com papel"
+    },
+    {
+      "id": "geo.freshness",
+      "dim": "geo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Datas e atualidade"
+    },
+    {
+      "id": "geo.information_gain",
+      "dim": "geo",
+      "ev": "S",
+      "type": "review",
+      "critical": true,
+      "label": "Ganho de informação frente ao top 3"
+    },
+    {
+      "id": "geo.data_accuracy",
+      "dim": "geo",
+      "ev": "S",
+      "type": "claims",
+      "critical": true,
+      "label": "Dados verificados contra a fonte (claims.json)"
+    },
+    {
+      "id": "geo.entity_specificity",
+      "dim": "geo",
+      "ev": "C",
+      "type": "review",
+      "label": "Entidades específicas"
+    },
+    {
+      "id": "aeo.definition",
+      "dim": "aeo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Frase de definição direta"
+    },
+    {
+      "id": "aeo.faq",
+      "dim": "aeo",
+      "ev": "A",
+      "type": "auto",
+      "label": "Perguntas frequentes"
+    },
+    {
+      "id": "aeo.direct_answers",
+      "dim": "aeo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Respostas diretas após perguntas"
+    },
+    {
+      "id": "aeo.lists_tables",
+      "dim": "aeo",
+      "ev": "C",
+      "type": "auto",
+      "label": "Listas ou tabelas"
+    },
+    {
+      "id": "aeo.question_coverage",
+      "dim": "aeo",
+      "ev": "C",
+      "type": "review",
+      "label": "Cobertura das perguntas reais"
+    },
+    {
+      "id": "style.em_dash",
+      "dim": "style",
+      "ev": "A",
+      "type": "auto",
+      "critical": true,
+      "label": "Sem travessão"
+    },
+    {
+      "id": "style.forbidden_terms",
+      "dim": "style",
+      "ev": "A",
+      "type": "auto",
+      "label": "Sem termos proibidos"
+    },
+    {
+      "id": "style.cta",
+      "dim": "style",
+      "ev": "A",
+      "type": "auto",
+      "label": "CTA do perfil presente"
+    },
+    {
+      "id": "style.voice",
+      "dim": "style",
+      "ev": "A",
+      "type": "review",
+      "label": "Voz do perfil"
+    }
+  ],
+  "notes": "type: auto = lint_post.py · claims = claims.py (fact-check) · review = revisor independente (review.json) ou --manual"
+}
